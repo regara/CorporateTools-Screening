@@ -1,5 +1,5 @@
 class FilingTask < ApplicationRecord
-  STATUSES = %w[Not\\ Started In\\ Progress Filed Rejected].freeze
+  STATUSES = ["Not Started", "In Progress", "Filed", "Rejected"].freeze
   FILING_TYPES = [
     "LLC Formation",
     "Annual Report",
