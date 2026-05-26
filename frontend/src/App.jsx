@@ -97,7 +97,11 @@ function App() {
           {error ? <p className="error-message">{error}</p> : null}
 
           {isLoading ? (
-            <p className="empty-state">Loading filings...</p>
+            <div className="loading-state">
+              <div className="spinner"></div>
+              <p className="loading-text">Loading your filings...</p>
+              <p className="loading-subtext">This may take a moment while the backend spins up</p>
+            </div>
           ) : (
             <TaskTable
               filings={filings}

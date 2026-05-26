@@ -3,7 +3,7 @@
 # Avoid CORS issues when API is called from the frontend app.
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "http://localhost:5173"
+    origins "http://localhost:5173", "https://corporate-tools-screening.vercel.app"
 
     resource "*",
       headers: :any,
